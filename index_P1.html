@@ -1,14 +1,99 @@
 <!DOCTYPE html>
 
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <html lang="fr">
 
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil - Booki à changer <!--titre à modifier--></title>
+        <link href="styles_P1.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="nav_barre">
+                <div>
+                    <a href="index_P1.html">
+                        <img src="images/logo/Booki.png" alt="logo de l'entreprise Booki" class="menu-logo"/>
+                    </a>
+                </div>
+                <div>
+                    <ul class="menu-onglets">
+                        <li class="onglets"><a href="#"></a>Hébergements</li> <!--Mettre les liens ancre vers bas de page-->
+                        <li class="onglets"><a href="#"></a>Activités</li> <!--Mettre les liens ancre vers bas de page-->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <main>
+            <section>
+                <div>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1><br>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div><br><br>
+                <form class="barre-de-recherche" action="" method="get">
+                    <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                    <label class="ville-a-renseigner" for="ville"></label>
+                    <input type="text" name="ville" id="ville" placeholder="Ex: Lille, France" size="25" maxlength="25">
+                    <input type="submit" value="Rechercher" class="cta"/>
+                </form><br><br>
+
+                <div class="filtres">
+                    <p><strong>Filtres</strong></p>
+                    <a class="mes-filtres" href="#"><i class="fa-solid fa-money-bill-wave" style="color: #0065FC;"></i>  Économique</a>
+                    <a class="mes-filtres" href="#"><i class="fa-solid fa-person" style="color: #0065FC;"></i> Familial</a>
+                    <a class="mes-filtres" href="#"><i class="fa-solid fa-heart" style="color: #0065FC;"></i> Romantique</a>
+                    <a class="mes-filtres" href="#"><i class="fa-solid fa-fire" style="color: #0065FC;"></i> Nos pépites</a>
+                </div><br>
+
+                <div class="point-info">
+                    <p><i class="fa-light fa-circle-info" style="color: #0065FC;"></i></p>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+
+            <section class="section-2-hebergements-marseille">
+            </section>
+
+            <section class="section-3-activites-marseille">                
+            </section>
+        </main>
+
+        <footer>
+            <table>
+                <thead>
+                    <tr>
+                        <th>À propos</th>
+                        <th>Nos hébergements</th>
+                        <th>Assistance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fonctionnement du site</td>
+                        <td>Charte et qualité</td>
+                        <td>Centre d'aide</td>
+                    </tr>
+                    <tr>
+                        <td>Conditions générales</td>
+                        <td>Proposez votre hôtel</td>
+                        <td>Nous contacter</td>
+                    </tr>
+                    <tr>
+                        <td>Données et confidentialité</td>
+                    </tr>
+                </tbody>
+            </table>
+        </footer>
     
-</body>
+    </body>
 
-</html>
+    </html>
