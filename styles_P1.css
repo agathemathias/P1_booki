@@ -42,7 +42,7 @@ header {
 
 .menu-onglets :hover {
     color : #0065FC;
-    border-top :3px #0065FC solid;
+    border-top :2px #0065FC solid;
 }
 
 
@@ -84,6 +84,13 @@ section {
     border-color: #F2F2F2;
 }
 
+.bordure {
+    outline: none;
+    border: 1px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+}
+
 .fa-location-dot {
     padding: 18px;
     background-color: #F2F2F2;
@@ -113,8 +120,8 @@ section {
     padding-right: 20px;
     padding-bottom: 13px;
     padding-top: 13px;
-    background: white;
-    border-color: 3px solid grey;
+    background: purple;
+    border-color: 10px solid grey;
     border-radius: 40px;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -125,7 +132,7 @@ section {
 }
 
 .mes-filtres :hover {
-    background: #DEEBFF;
+    background: pink;
 }
 
 .filtres {
@@ -143,27 +150,50 @@ section {
 }
 
 
+
 /*SECTION 3 - ACTIVITES MARSEILLE*/
 
 .section-3-activites-marseille {
     margin: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 2px;
 }
 
-.images-activites-marseille {
+.activites-marseille-photos-et-titres {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px;
-    grid-gap: 10px;
-    padding-top: 20px;
-    border-radius: 40px;
+    grid-template-rows: 560px;
+    grid-gap: 125px;
+    align-items: center;
 }
 
-.images-activites-marseille img {
+.activites-marseille-photos-et-titres img {
     width: 300px;
     height: 380px;
-    object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(144, 144, 142, 0.4);
 }
+
+.activites-marseille-titre-photo {
+    width: 290px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 10px;
+    padding-top: 15px;
+    box-shadow: 5px 5px 10px rgba(144, 144, 142, 0.4);
+}
+
+.activites-marseille-lien {
+    text-decoration: none;
+}
+
+.activites-marseille-lien img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 
 /*Footer*/
 table {
@@ -182,4 +212,9 @@ td,th {
 thead {
     font-weight:bold;
     text-align: left;
+}
+
+
+.filter-color {
+    color: #0065FC;
 }

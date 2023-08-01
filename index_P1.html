@@ -42,13 +42,13 @@
                 <form class="barre-de-recherche" action="" method="get">
                     <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                     <label class="ville-a-renseigner" for="ville"></label>
-                    <input type="text" name="ville" id="ville" placeholder="Ex: Lille, France" size="25" maxlength="25">
+                    <input class="bordure" type="text" name="ville" id="ville" placeholder="Ex: Lille, France" size="25" maxlength="25">
                     <input type="submit" value="Rechercher" class="cta"/>
                 </form><br><br>
 
                 <div class="filtres">
                     <p><strong>Filtres</strong></p>
-                    <a class="mes-filtres" href="#"><i class="fa-solid fa-money-bill-wave" style="color: #0065FC;"></i>  Économique</a>
+                    <a class="mes-filtres" href="#"><i class="fa-solid fa-money-bill-wave filter-color"></i> Économique</a>
                     <a class="mes-filtres" href="#"><i class="fa-solid fa-person" style="color: #0065FC;"></i> Familial</a>
                     <a class="mes-filtres" href="#"><i class="fa-solid fa-heart" style="color: #0065FC;"></i> Romantique</a>
                     <a class="mes-filtres" href="#"><i class="fa-solid fa-fire" style="color: #0065FC;"></i> Nos pépites</a>
@@ -65,12 +65,24 @@
             </section>
 
             <section id="activites" class="section-3-activites-marseille">
-                <h2>Activités à Marseille</h2><br>
-                <div class="images-activites-marseille">
-                    <img src="images/activites/reno-laithienne.jpg" alt="Vieux Port de Marseille"/>
-                    <img src="images/activites/paul-hermann.jpg" alt="Fort de Pomègue à Marseille"/>
-                    <img src="images/activites/kilyan-sockalingum.jpg" alt="Parc National des Calanques à Marseille"/>
-                    <img src="images/activites/florian-wehde.jpg" alt="Notre-Dame de la Garde à Marseille"/>
+                <h2>Activités à Marseille</h2>
+                <div class="activites-marseille-photos-et-titres">
+                    <a href="#" class="activites-marseille-lien">
+                        <img src="images/activites/reno-laithienne.jpg" alt="Vieux Port de Marseille"/>
+                        <div class="activites-marseille-titre-photo">Vieux Port</div>
+                    </a>
+                    <a href="#" class="activites-marseille-lien">
+                        <img src="images/activites/paul-hermann.jpg" alt="Fort de Pomègue à Marseille"/>
+                        <div class="activites-marseille-titre-photo">Fort de Pomègue</div>
+                    </a>
+                    <a href="#" class="activites-marseille-lien">
+                        <img src="images/activites/kilyan-sockalingum.jpg" alt="Parc National des Calanques à Marseille"/>
+                        <div class="activites-marseille-titre-photo">Parc National des Calanques</div>
+                    </a>
+                    <a href="#" class="activites-marseille-lien">
+                        <img src="images/activites/florian-wehde.jpg" alt="Notre-Dame de la Garde à Marseille"/>
+                        <div class="activites-marseille-titre-photo">Notre-Dame de la Garde</div>
+                    </a>
                 </div>
             </section>
         </main>
