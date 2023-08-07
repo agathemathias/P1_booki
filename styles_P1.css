@@ -149,12 +149,20 @@ section {
     font-weight: 800;
 }
 
+.mes-filtres i {
+    padding-right: 12px;
+}
+
 /*Point information*/
 .point-info {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
+.point-info p {
+    padding-left: 15px;
+}
 
 /* SECTION 2 - HEBERGEMENTS MARSEILLE */ 
 
@@ -208,23 +216,18 @@ section {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding : 15px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .text-card p {
-    font-size: 16px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    font-size: 15px;
+    padding-top: 6px;
+    padding-bottom: 5px;
 }
 
 /* SECTION 2 - DROITE */
-
-.card-droite {
-    display: flex; 
-    flex-direction: column; 
-    gap: 25px;
-    background-color: pink;
-}
 
 .box2-populaires {
     width: 430px;
@@ -234,34 +237,60 @@ section {
     border-radius: 30px;
 }
 
+.card-droite {
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px;
+    background-color: #F2F2F2;
+    padding-top: 30px;
+}
+
 .droite-card {
-    position : relative;
     width: 400px;
     height: 160px;
+    display: flex;
+    flex-direction: row;
     border: none;
     border-radius: 30px;
     background-color: white;
     box-shadow: 5px 5px 10px rgba(144, 144, 142, 0.4);
-    font-size: 14px;
     font-family: 'Raleway', sans-serif;
     margin: auto;
 }
 
 .droite-card img {
-    position: absolute;
-    top: 5px;
-    bottom: 5px;
-    left: 6px;
-    right: 80px;
     object-fit: cover;
     width: 35%;
-    height: 93%;
+    height: 94%;
+    padding-top: 5px;
+    padding-left: 5px;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
 }
 
-.box2-populaires h2 {
-    padding-bottom: 30px;
+.texte-card-droite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.texte-card-droite p {
+    font-size: 14px;
+    padding-top: 6px;
+    padding-bottom: 45px;
+}
+
+.title-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+
 }
 
 /* FLEXBOX SECTION 2 DES DEUX PARTIES */
@@ -285,7 +314,6 @@ section {
     grid-template-rows: 560px;
     grid-gap: 125px;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .activites-marseille-photos-et-titres img {
