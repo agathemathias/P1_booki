@@ -166,10 +166,16 @@ section {
     border-radius: 30px;
 }
 
-.bouton-photos {
-    position : relative;
+.box1-hebergements h2 {
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.lien-hotels {
     width: 280px;
     height: 230px;
+    display: flex;
+    flex-direction: column;
     border: none;
     border-radius: 30px;
     background-color: white;
@@ -178,37 +184,37 @@ section {
     font-family: 'Raleway', sans-serif;
 }
 
-.bouton-photos img {
-    position: absolute;
-    top: 5px;
-    bottom: 50px;
-    left: 6px;
-    right: 20px;
+.lien-hotels img {
     object-fit: cover;
+    margin: auto;
     width: 96%;
-    height: 55%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    height: 53%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .card-photos-hotels {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
     margin: auto;
     justify-content: space-around;
     padding-bottom: 30px;
     flex-wrap:wrap;
 }
 
-.box1-hebergements h2,p {
-    padding-bottom: 30px;
-    padding-left: 20px;
+.text-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding : 15px;
 }
 
-.button h2,p,i {
-    display: flex;
-    justify-content:left;
+.text-card p {
+    font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 /* SECTION 2 - DROITE */
@@ -236,7 +242,7 @@ section {
     border-radius: 30px;
     background-color: white;
     box-shadow: 5px 5px 10px rgba(144, 144, 142, 0.4);
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Raleway', sans-serif;
     margin: auto;
 }
