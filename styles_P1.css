@@ -1,51 +1,71 @@
 * {
+    font-family: 'Raleway', sans-serif;
     margin : 0;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    width: 1440px;
     margin:auto;
 }
 
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+}
+
 header {
+    width: 1440px;
     height: 80px;
-    padding-left: 50px;
 }
 
 /* barre de navigation - FlexBox*/
 .menu-logo {
-    height: 28px;
-    padding-top: 30px;
+    height: 30px;
+    padding-left: 50px;
 }
 
 .nav_barre {
+    height: 79px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    margin: auto;
 }
 
 .menu-onglets {
     display:flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
     gap: 60px;
-    margin-right: 50px;
     list-style-type :none;
+    padding-right: 50px;
 }
 
 .li-onglets :hover {
     color : #0065FC;
-    padding-top: 38px;
+    padding-top: 28px;
     border-top :2px #0065FC solid;
-}
-
-.li-onglets {
-    padding-top: 40px;
 }
 
 a {
@@ -60,24 +80,6 @@ main {
     padding-right:50px;
     padding-top: 30px;
     padding-bottom:30px;
-}
-
-h1 {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-p {
-    font-size: 17px;
-    font-weight: normal;
-}
-
-section {
-    padding-bottom: 60px;
 }
 
 /* Formulaire de recherche */
@@ -160,6 +162,7 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 60px;
 }
 
 .point-info p {
@@ -179,12 +182,8 @@ section {
     border-radius: 20px;
 }
 
-.box1-hebergements h2,h4 {
+.box1-hebergements h1,h4 {
     margin: 30px;
-}
-
-.box1-hebergements h3 {
-    font-size: 16px;
 }
 
 .lien-hotels {
@@ -204,7 +203,7 @@ section {
     object-fit: cover;
     margin: auto;
     width: 96%;
-    height: 124px;
+    height: 118px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding-top: 5px;
@@ -228,10 +227,6 @@ section {
     margin: 8px;
     padding-left: 8px;
     gap: 6px;
-}
-
-.text-card p {
-    font-size: 14px;
 }
 
 /* SECTION 2 - DROITE */
@@ -283,11 +278,11 @@ section {
     align-items: flex-start;
     padding-left: 15px;
     justify-content: space-between;
+    font-size: 14px;
     margin: 8px;
 }
 
 .texte-card-droite p {
-    font-size: 14px;
     padding-top: 6px;
 }
 
@@ -315,13 +310,14 @@ section {
 /* SECTION 3 - ACTIVITES MARSEILLE */
 
 .section3-activites {
-    width: 1340px;
+    width: 1280px;
     height: 560px;
     display: flex;
     flex-direction: column;
     margin: auto;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 30px;
 }
 
 .liens-activites {
@@ -331,7 +327,6 @@ section {
     justify-content: space-between;
     border-radius: 20px;
     flex-wrap: wrap;
-    padding-top: 40px;
 }
 
 .liens-activites img {
@@ -352,8 +347,6 @@ section {
 }
 
 .photos-titres-section3 p {
-    font-size: 18px;
-    font-weight: 500;
     padding-left: 20px;
 }
 
@@ -361,7 +354,7 @@ section {
 table {
     margin: auto;
     background-color: #F2F2F2;
-    padding-left: 20px;
+    padding-left: 15px;
     width: 1340px;
 }
 
@@ -376,7 +369,168 @@ thead {
     text-align: left;
 }
 
-
 .filter-color {
     color: #0065FC;
+}
+
+/* RESPONSIVE MOBILE */ 
+
+@media all and (max-width: 375px) {
+
+    body {
+        width: 375px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+    
+    h4 {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+
+    header {
+        width: 375px;
+    }
+
+
+}
+
+
+/* RESPONSIVE DESKTOP */
+
+@media all and (min-width: 1024px) {
+    body {
+        padding-right: 50px;
+        padding-left: 50px;
+        width: 1440px;
+    }
+}
+
+
+/* RESPONSIVE TABLETTE */
+
+@media all and (min-width: 375px) and (max-width: 1024px) {
+    body {
+        width: 1024px;
+        margin:auto;
+    }
+
+    h1 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+    
+    h4 {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+
+    header {
+        width: 1024px;
+    }
+
+    .mes-filtres {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        height: 923px;
+        gap: 50px;
+    }
+
+    .card-droite {
+        flex-direction: row;
+    }
+
+    .box1-hebergements {
+        width: 924px;
+    }
+
+    .box1-hebergements h1, h4 {
+        padding-left: 20px;
+    }
+
+    .title-right {
+        width: 864px;
+    }
+
+    .box2-populaires {
+        width: 924px;
+        height: 252px;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+
+    .card-droite {
+        width: 864px;
+        justify-content: space-around;
+        margin: auto;
+
+    }
+
+    .droite-card {
+        width: 274px;
+        height: 146px;
+    }
+
+    .droite-card img {
+        width: 91px;
+    }
+
+    .section3-activites {
+        width: 924px;
+        height: 390px;
+        padding: 30px;
+    }
+
+    .photos-titres-section3 {
+        width: 193px;
+        height: 270px;
+    }
+
+    .liens-activites {
+        width: 864px;
+    }
+
+    .liens-activites img {
+        width:100%;
+        height: 75%;
+    }
+
+    table {
+        width: 924px;
+    }
 }
