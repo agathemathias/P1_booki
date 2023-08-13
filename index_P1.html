@@ -20,26 +20,24 @@
             <nav class="nav_barre">
                 <div>
                     <a href="index_P1.html">
-                        <img src="images/logo/Booki.png" alt="logo de l'entreprise Booki" class="menu-logo"/>
+                        <img src="images/logo/Booki.png" alt="logo de l'entreprise Booki" class="logo"/>
                     </a>
                 </div>
-                <div>
-                    <ul class="menu-onglets">
-                        <li class="li-onglets"><a href="#hebergements" class="onglets">Hébergements</a></li> <!--Mettre les liens ancre vers bas de page-->
-                        <li class="li-onglets"><a href="#activites" class="onglets">Activités</a></li> <!--Mettre les liens ancre vers bas de page-->
-                    </ul>
-                </div>
+                <ul class="onglets">
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                </ul>
             </nav>
         </header>
 
 
         <main>
-            <section>
+            <section class="section-1">
                 <div>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1><br>
                     <h3>En plein centre-ville ou en pleine nature</h3>
                 </div><br><br>
-                <form class="barre-de-recherche" action="" method="get">
+                <form class="barre-de-recherche" method="get">
                     <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                     <label class="ville-a-renseigner" for="ville"></label>
                     <input class="bordure" type="text" name="ville" id="ville" placeholder="Ex: Lille, France" size="25" maxlength="25">
@@ -48,7 +46,7 @@
 
                 
                 <div class="mes-filtres"> 
-                    <h2><strong>Filtres</strong></h2>
+                    <h3>Filtres</h3>
                     <div>
                         <button type="button"><i class="fa-solid fa-money-bill-wave filter-color fa-lg"></i>  Économique</button>
                         <button type="button"><i class="fa-solid fa-person fa-lg" style="color: #0065FC;"></i>  Familial</button>
@@ -64,10 +62,9 @@
             </section>
 
 
-
             <section class="section-2">
                 
-                <div class="box1-hebergements" id="hebergements">
+                <article id="hebergements">
                     <h1>Hébergements à Marseille</h1>
                     <div class="card-photos-hotels">
                         <a href="#" class="lien-hotels">
@@ -97,7 +94,7 @@
                         <a href="#" class="lien-hotels">
                             <img src="images/herbergements/marcus-loke.jpg" alt="Auberge de la Canebière"/>
                             <div class="text-card">    
-                                <h3>Hôtel De La Mer</h3>
+                                <h3>Hôtel de la Mer</h3>
                                 <p>Nuit à partir de 46€</p>
                                 <div><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #f5f5f5;"></i></div>
                             </div>
@@ -105,7 +102,7 @@
                         <a href="#" class="lien-hotels">
                             <img src="images/herbergements/nicate-lee.jpg" alt="Auberge le panier à Marseille"/>
                             <div class="text-card">    
-                                <h3>Auberge La Canebière</h3>
+                                <h3>Auberge la Canebière</h3>
                                 <p>Nuit à partir de 25€</p>
                                 <div><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #f5f5f5;"></i></div>
                             </div>
@@ -113,17 +110,17 @@
                         <a href="#" class="lien-hotels">
                             <img src="images/herbergements/reisetopia.jpg" alt="Hôtel les mouettes à Marseille"/>
                             <div class="text-card">    
-                                <h3>Auberge La Panier</h3>
+                                <h3>Auberge le panier</h3>
                                 <p>Nuit à partir de 23€</p>
                                 <div><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #f5f5f5;"></i></div>
                             </div>
                         </a>
                     </div>
                     <h4>Afficher plus</h4>
-                </div>
+                </article>
 
 
-                <div class="box2-populaires">
+                <aside>
                     <div class="title-right">
                         <h1>Les plus populaires</h1>
                         <i class="fa-solid fa-chart-line fa-xl" style="color: #0065FC;"></i>
@@ -133,7 +130,7 @@
                             <img src="images/herbergements/febrian-zakaria2.jpg" alt="Hôtel bleu et blanc à Marseille"/>
                             <div class="texte-card-droite">   
                                 <div>
-                                    <h3>Auberge La Canebière</h3>
+                                    <h3>Auberge la Canebière</h3>
                                     <p>Nuit à partir de 25€</p>
                                 </div>
                                 <div><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color:#0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #0065FC;"></i><i class="fa-solid fa-star fa-sm" style="color: #f5f5f5;"></i></div>
@@ -160,10 +157,10 @@
                             </div>
                         </a>    
                     </div>
-                </div>
+                </aside>
             </section>
 
-            <section class="section3-activites">
+            <section class="section-3">
                 <h1 id="activites">Activités à Marseille</h1>
                 <div class="liens-activites">
                     <a href="#" class="photos-titres-section3">
