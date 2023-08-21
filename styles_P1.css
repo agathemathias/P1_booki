@@ -8,6 +8,10 @@ body {
     margin:auto;
 }
 
+main {
+    padding-bottom: 30px;
+}
+
 h1 {
     font-size: 22px;
     font-weight: 700;
@@ -24,7 +28,7 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 15.4px;
     font-weight: 700;
 }
 
@@ -45,8 +49,6 @@ p {
     color: #f5f5f5;
 }
 
-
-/* barre de navigation - FlexBox*/
 .logo {
     height: 30px;
 }
@@ -82,14 +84,16 @@ a {
     color: black;
 }
 
-/* SECTION 1 */
 .section-1 {
     width: 90%;
     margin: auto;
     padding-top: 40px;
 }
 
-/* Formulaire de recherche */
+.section-1 h1 {
+    padding-bottom: 15px;
+}
+
 form {
     width: 377px;
     display: flex;
@@ -109,10 +113,7 @@ form {
     background-color: #F2F2F2;
     border-top-left-radius: 13px;
     border-bottom-left-radius: 13px;
-    padding-top: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 25px;
+    padding: 25px 20px 25px 20px;
 }
 
 .cta {
@@ -127,14 +128,8 @@ form {
     width: 38%;
 }
 
-
-/*Filtres de recherche*/
-
 .mes-filtres button {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 13px;
-    padding-top: 13px;
+    padding: 13px 20px 13px 20px;
     background: white;
     border-radius: 40px;
     font-family: 'Raleway', sans-serif;
@@ -154,46 +149,59 @@ form {
 .mes-filtres {
     display: flex;
     flex-direction: row; 
-    gap: 6px;
+    gap: 12px;
     align-items: center;
     font-weight: 800;
+    padding: 30px 0px 30px 0px;
+}
+
+.filtre-flexbox {
+    display: flex;
+    gap: 12px;
 }
 
 .mes-filtres i {
-    padding-right: 12px;
+    padding-right: 10px;
 }
 
-/*Point information*/
 .point-info {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .point-info p {
     padding-left: 15px;
 }
 
-/* SECTION 2 - HEBERGEMENTS MARSEILLE */ 
+.section-2 {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 20px;
+}
 
 article {
     width: 67%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
 
 article h1, article h2 {
     margin: 30px;
+    padding: inherit;
 }
 
 .card-photos-hotels a {
     width: 30%;
-    height: 207px;
+    height: 208px;
     display: flex;
     flex-direction: column;
     border: none;
@@ -213,7 +221,7 @@ article h1, article h2 {
 }
 
 .card-photos-hotels {
-    width: 96%;
+    width: 98%;
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -232,12 +240,10 @@ article h1, article h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 8px;
-    padding-left: 8px;
+    margin: 7px;
+    padding-left: 3px;
     gap: 6px;
 }
-
-/* SECTION 2 - DROITE */
 
 aside {
     width: 31%;
@@ -246,14 +252,15 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .card-droite {
     width: 95%;
-    height: 492px;
+    height: 490px;
     display: flex; 
-    flex-direction: column; 
+    flex-direction: column;
+    padding-bottom: 28px;
 }
 
 .droite-card {
@@ -261,7 +268,6 @@ aside {
     height: 144px;
     display: flex;
     flex-direction: row;
-    border: none;
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 10px rgba(144, 144, 142, 0.4);
@@ -273,8 +279,7 @@ aside {
     object-fit: cover;
     width: 30%;
     height: 93%;
-    padding-top: 5px;
-    padding-left: 5px;
+    padding: 5px 0px 5px 5px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
 }
@@ -283,7 +288,7 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 15px;
+    padding-left: 10px;
     justify-content: space-between;
     margin: 8px;
 }
@@ -300,34 +305,22 @@ aside {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 15px;
+    padding: 30px 20px 0px 20px;
 }
-
-/* FLEXBOX SECTION 2 DES DEUX PARTIES */
-
-.section-2 {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: auto;
-    padding-top: 30px;
-}
-
-/* SECTION 3 - ACTIVITES MARSEILLE */
 
 .section-3 {
-    width: 88%;
+    width: 92%;
     height: 520px;
     display: flex;
     flex-direction: column;
     margin: auto;
     align-items: flex-start;
     justify-content: space-around;
-    padding: 50px;
+    padding: 50px 0px 70px 0px;
+}
+
+.section-3 h1 {
+    padding: 0px 0px 30px 35px;
 }
 
 .liens-activites {
@@ -343,7 +336,7 @@ aside {
 .liens-activites img {
     object-fit: cover;
     width: 100%;
-    height: 85%;
+    height: 82%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -351,17 +344,16 @@ aside {
 .photos-titres-section3 {
     display:flex;
     flex-wrap: wrap;
-    width: 24%;
+    width: 22%;
     height: 100%;
     box-shadow: 5px 5px 10px rgba(144, 144, 142, 0.4);
     border-radius: 20px;
 }
 
-.photos-titres-section3 p, .photos-titres-section3 h4 {
-    padding-left: 20px;
+.photos-titres-section3 h4 {
+    padding-left: 7px;
+    margin: 15px;
 }
-
-/*Footer*/
 
 footer {
     width: 90%;
@@ -372,7 +364,7 @@ footer {
     margin:auto;
 }
 
-.div-du-footer {
+.div-footer {
     padding: 20px;
     width: 100%;
     display: flex;
@@ -380,20 +372,16 @@ footer {
     align-items: flex-start;
 }
 
-.div-du-footer h2, .div-du-footer p {
+.div-footer h2, .div-footer p {
     padding-bottom: 15px;
 }
 
-/* RESPONSIVE LARGE DESKTOP */
 
 @media all and (min-width: 1440px){
     body {
         width: 1440px;
     }
-
 }
-
-/* RESPONSIVE DESKTOP */ 
 
 @media all and (min-width: 768px) {
     .cta-magnifying-glass {
@@ -401,17 +389,9 @@ footer {
     }
 }
 
-/* RESPONSIVE TABLETTE */
-
 @media all and (min-width: 768px) and (max-width: 1024px) {    
     h3 {
         font-size: 16px;
-    }
-
-    .mes-filtres {
-        flex-direction: row;
-        align-items: center;
-        gap: 6px;
     }
 
     .section-2 {
@@ -429,21 +409,18 @@ footer {
 
     .title-right {
         width: 93%;
+        padding: 20px 20px 0px 20px
     }
 
     aside {
         width: 100%;
         height: 252px;
-        justify-content: space-around;
         align-items: flex-start;
-        padding-top: 10px;
     }
 
     .card-droite {
         width: 100%;
-        justify-content: space-around;
-        margin: auto;
-        flex-wrap: wrap;
+        padding-bottom: inherit;
     }
 
     .droite-card {
@@ -457,8 +434,12 @@ footer {
 
     .section-3 {
         padding-top: 50px;
-        width: 90%;
+        width: 85%;
         height: 390px;
+    }
+
+    .section-3 h1 {
+        padding: 0px;
     }
 
     .photos-titres-section3 {
@@ -476,9 +457,6 @@ footer {
     }
 }
 
-
-/* RESPONSIVE MOBILE */
-
 @media all and (max-width: 768px) {    
     h3 {
         font-size: 14px;
@@ -492,7 +470,6 @@ footer {
         height: 115px;
         width: 100%;
         flex-direction: column;
-        justify-content: space-around;
     }
 
     .nav_barre div {
@@ -508,7 +485,6 @@ footer {
     li {
         width: 50%;
         display: inline-flex;
-        align-items: center;
         justify-content: space-around;
     }
 
@@ -518,13 +494,11 @@ footer {
 
     li :hover {
         width: 100%;
-        color: #0065FC;
         border-bottom: 2px #0065FC solid;
         border-top: none;
         display: inline-flex;
         justify-content: space-around;
-        padding-bottom: 13px; 
-        padding-top: inherit;
+        padding: 0px 0px 13px 0px
     }
 
     form {
@@ -554,24 +528,18 @@ footer {
 
     .fa-magnifying-glass {
         color: #ffffff;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 17px;
-        padding-right: 20px;
+        padding: 25px 20px 25px 17px;
     }
 
     .mes-filtres {
         flex-direction: column;
         align-items: flex-start;
         height: 161px;
-        width: 100%;
         justify-content: space-around;
     }
 
     .filtre-flexbox{
         width: 100%;
-        display: flex;
-        justify-content: space-between;
     }
 
     button {
@@ -590,7 +558,7 @@ footer {
 
     aside {
         width: 100%;
-        height: 569px;
+        height: 579px;
         border-radius: inherit;
     }
 
@@ -601,27 +569,24 @@ footer {
 
     .title-right {
         width: 90%;
+        padding-bottom: 20px;
     }
 
     .card-droite {
         width: 100%;
-        margin: auto;
-        flex-direction: column;
-    }
-
-    .droite-card {
-        width: 90%;
     }
 
     .card-photos-hotels {
-        display: flex;
         width: 92%;
         flex-direction: column;
     }
 
     .card-photos-hotels a {
         width: 100%;
-        height: 207px;
+    }
+
+    .text-card {
+        padding-left: 10px;
     }
 
     .section-3 {
@@ -631,12 +596,14 @@ footer {
         height: 975px;
     }
 
+    .section-3 h1 {
+        padding: inherit;
+    }
+
     .liens-activites {
         width: 98%;
         height: 90%;
         flex-direction: column;
-        justify-content: space-around;
-        margin: inherit;
     }
 
     .photos-titres-section3 {
@@ -655,7 +622,7 @@ footer {
         padding-left: 25px;
     }
 
-    .div-du-footer h2, .div-du-footer p {
+    .div-footer h2, .div-footer p {
         padding-bottom: inherit;
     }
 
