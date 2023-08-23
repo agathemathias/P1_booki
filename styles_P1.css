@@ -121,6 +121,13 @@ form {
     padding: 25px 20px 25px 20px;
 }
 
+.fa-info {
+    size: 3px;
+    border: 2px solid #F2F2F2;
+    padding: 11px 9px 11px 9px;
+    border-radius: 80px;
+}
+
 .cta {
     background-color: #0065FC;
     font-weight: 700;
@@ -190,7 +197,7 @@ form {
     padding-top: 20px;
 }
 
-article {
+.div-hebergement {
     width: 67%;
     display: flex;
     flex-direction: column;
@@ -199,7 +206,7 @@ article {
     border-radius: 20px;
 }
 
-article h2, article h3 {
+.div-hebergement h2, .div-hebergement h3 {
     margin: 30px;
     padding: inherit;
 }
@@ -218,11 +225,11 @@ article h2, article h3 {
 
 .card-photos-hotels img {
     object-fit: cover;
-    margin: auto;
-    width: 96.5%;
+    width: 96%;
     height: 118px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    padding: 5px;
 }
 
 .card-photos-hotels {
@@ -245,12 +252,12 @@ article h2, article h3 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 7px;
+    margin: 0px 7px 7px 7px;
     padding-left: 3px;
     gap: 6px;
 }
 
-aside {
+.div-populaires {
     width: 31%;
     background-color:#F2F2F2;
     border-radius: 20px;
@@ -266,9 +273,10 @@ aside {
     display: flex; 
     flex-direction: column;
     padding-bottom: 28px;
+    justify-content: space-around;
 }
 
-.droite-card {
+.card-droite article {
     width: 90%;
     height: 144px;
     display: flex;
@@ -280,7 +288,7 @@ aside {
     margin: auto;
 }
 
-.droite-card img {
+.card-droite img {
     object-fit: cover;
     width: 30%;
     height: 93%;
@@ -370,15 +378,15 @@ footer {
 }
 
 .div-footer {
-    padding: 20px;
-    width: 100%;
+    padding: 19px;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .div-footer h3, .div-footer p {
-    padding-bottom: 15px;
+    padding: 0px 0px 15px 15px;
 }
 
 
@@ -408,8 +416,12 @@ footer {
         flex-direction: row;
     }
 
-    article {
+    .div-hebergement {
         width: 100%;
+    }
+
+    .card-photos-hotels img {
+        padding: 4.5px;
     }
 
     .title-right {
@@ -417,7 +429,7 @@ footer {
         padding: 20px 20px 0px 20px
     }
 
-    aside {
+    .div-populaires {
         width: 100%;
         height: 252px;
         align-items: flex-start;
@@ -426,14 +438,15 @@ footer {
     .card-droite {
         width: 100%;
         padding-bottom: inherit;
+        padding-top: 25px;
     }
 
-    .droite-card {
-        width: 30%;
+    .card-droite a {
+        width: 34%;
         height: 146px;
     }
 
-    .droite-card img {
+    .card-droite img {
         width: 91px;
     }
 
@@ -561,13 +574,13 @@ footer {
         gap: 15px;
     }
 
-    aside {
+    .div-populaires {
         width: 100%;
         height: 579px;
         border-radius: inherit;
     }
 
-    article {
+    .div-hebergement {
         width: 100%;
         background-color: white;
     }
@@ -588,6 +601,11 @@ footer {
 
     .card-photos-hotels a {
         width: 100%;
+    }
+
+    .card-photos-hotels img{
+        width: 97%;
+        padding-left: 6px;
     }
 
     .text-card {
@@ -624,12 +642,13 @@ footer {
         width: 100%;
         height: inherit;
         flex-direction: column;
-        padding-left: 25px;
     }
 
     .div-footer h2, .div-footer p {
         padding-bottom: inherit;
     }
+
+    /* Pour l'ordre des cartes, comme sur la mquette */
 
     .card1 {
         order: 1;
