@@ -324,7 +324,7 @@ aside {
     padding: 50px 0px 70px 0px;
 }
 
-.section-3 h1 {
+.section-3 h2 {
     padding: 0px 0px 30px 35px;
 }
 
@@ -443,7 +443,7 @@ footer {
         height: 390px;
     }
 
-    .section-3 h1 {
+    .section-3 h2 {
         padding: 0px;
     }
 
@@ -601,8 +601,8 @@ footer {
         height: 975px;
     }
 
-    .section-3 h1 {
-        padding: inherit;
+    .section-3 h2 {
+        padding: 0px 0px 0px 10px;
     }
 
     .liens-activites {
