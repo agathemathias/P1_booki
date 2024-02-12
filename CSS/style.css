@@ -660,8 +660,6 @@ footer {
         padding-bottom: inherit;
     }
 
-    /* Pour l'ordre des cartes, comme sur la mquette */
-
     .card1 {
         order: 1;
     }
